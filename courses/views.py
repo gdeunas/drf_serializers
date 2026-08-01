@@ -2,6 +2,7 @@ from rest_framework import viewsets, generics
 from courses.models import Course, Lesson
 from courses.serializers import CourseSerializer, LessonSerializer
 
+
 class CourseViewSet(viewsets.ModelViewSet):
     queryset = Course.objects.all()
     serializer_class = CourseSerializer

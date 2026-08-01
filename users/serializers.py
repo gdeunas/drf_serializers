@@ -5,14 +5,14 @@ from users.models import User
 class UserProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id', 'email', 'phone', 'city', 'avatar', 'password']
+        fields = ["id", "email", "phone", "city", "avatar", "password"]
         extra_kwargs = {
-            'password': {'write_only': True, 'required': False},
-            'email': {'required': False}
+            "password": {"write_only": True, "required": False},
+            "email": {"required": False},
         }
 
     def update(self, instance: User, validated_data):  # Added type hint here
-        password = validated_data.pop('password', None)
+        password = validated_data.pop("password", None)
         if password:
             instance.set_password(password)
 
