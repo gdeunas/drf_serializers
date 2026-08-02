@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/drf_viewset_generic.iml" filepath="$PROJECT_DIR$/.idea/drf_viewset_generic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/drf_serializers.iml" filepath="$PROJECT_DIR$/.idea/drf_serializers.iml" />
     </modules>
   </component>
 </project>
