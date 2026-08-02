@@ -33,5 +33,5 @@ class CourseDetailSerializer(serializers.ModelSerializer):
             "lessons",
         )
 
-    def get_count_course_with_lesson(self, courses):
-        return Course.objects.filter(lesson=courses.lesson).count()
+    def get_count_course_with_lesson(self, obj):
+        return obj.lessons.count()
